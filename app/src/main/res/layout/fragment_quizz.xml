@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alexseymour.classroomactivity.QuizzFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/button_quizz1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_centerInParent="true"
+            />
+
+        <Button
+            android:id="@+id/button_quizz2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_below="@id/button_quizz1"
+            android:layout_centerInParent="true"
+            />
+
+        <Button
+            android:id="@+id/button_quizz3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_below="@id/button_quizz2"
+            android:layout_centerInParent="true"
+            />
+
+        <Button
+            android:id="@+id/button_quizz4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_below="@id/button_quizz3"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/player1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/player1_text" />
+
+
+        <ImageView
+            android:id="@+id/player1_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/player1_text"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/player2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player2_text"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/player2_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/player2_text"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/question_quizz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_quizz1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/question_quizz" />
+    </RelativeLayout>
+
+
+</FrameLayout>
